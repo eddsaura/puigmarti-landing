@@ -30,7 +30,7 @@ export const ScheduleGroup = component$(({ schedule }: Props) => {
             key="title"
             class="py-6 px-4 border border-black border-opacity-10 rounded-lg group hover:bg-puxi-primary-800 hover:bg-opacity-5 transition-all"
           >
-            <div class="flex gap-x-4 mb-6 items-center h-[54px]">
+            <div class="flex gap-x-4 mb-6 items-center min-h-[54px]">
               <p class="text-xl text-white bg-puxi-primary-800 py-4 px-4 rounded-2xl font-bold  ">
                 {simpleHourStartDate}
               </p>

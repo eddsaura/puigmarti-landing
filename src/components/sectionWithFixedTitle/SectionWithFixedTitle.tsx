@@ -21,12 +21,9 @@ export const SectionWithTitle = component$(
         (entries) => {
           entries.forEach((entry) => {
             if (entry.isIntersecting) {
-              console.log("isIntersecting", entry.target);
               show.value = true;
               window.addEventListener("scroll", onScroll);
             } else {
-              console.log("isNotIntersecting", entry.target);
-              show.value = false;
               window.removeEventListener("scroll", onScroll);
             }
           });
