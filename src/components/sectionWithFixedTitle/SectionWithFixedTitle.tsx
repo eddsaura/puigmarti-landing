@@ -30,7 +30,7 @@ export const SectionWithTitle = component$(
             }
           });
         },
-        { threshold: 0.2 }
+        { threshold: 0.15 }
       );
 
       const onScroll = () => {
@@ -64,9 +64,9 @@ export const SectionWithTitle = component$(
       >
         <Component
           class={clsx(
-            "mb-4 opacity-0 transition-transform transform translate-y-2 duration-300 bg-puxi-primary-100 py-5 pt-8 w-full z-10 ",
+            "mb-4 opacity-0 transition-transform transform translate-y-2 duration-400 bg-puxi-primary-100 py-5 pt-8 w-full z-10 ",
             {
-              "opacity-100 translate-y-0": show.value,
+              "opacity-100 !translate-y-0": show.value,
               "fixed -top-4 bg-opacity-70 backdrop-filter backdrop-blur-md ":
                 fixed.value,
             }
@@ -76,7 +76,7 @@ export const SectionWithTitle = component$(
         </Component>
         <div
           class={clsx(
-            "opacity-0 transition-all transform translate-y-6 duration-300 delay-150",
+            "opacity-0 transition-all transform translate-y-6 duration-400 delay-150",
             {
               "opacity-100 !translate-y-0": show.value,
             }
