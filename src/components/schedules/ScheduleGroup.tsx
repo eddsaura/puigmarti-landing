@@ -28,13 +28,13 @@ export const ScheduleGroup = component$(({ schedule }: Props) => {
         return (
           <div
             key="title"
-            class="py-6 px-4 border border-black border-opacity-10 rounded-lg group hover:bg-puxi-primary-800 hover:bg-opacity-5 transition-all "
+            class="py-6 px-4 border border-black border-opacity-10 rounded-lg group hover:bg-puxi-primary-800 hover:bg-opacity-5 transition-all"
           >
-            <div class="flex gap-x-4 mb-6 items-center">
-              <p class="text-xl text-white bg-puxi-primary-800 p-4 rounded-2xl font-bold  ">
+            <div class="flex gap-x-4 mb-6 items-center h-[54px]">
+              <p class="text-xl text-white bg-puxi-primary-800 py-4 px-4 rounded-2xl font-bold  ">
                 {simpleHourStartDate}
               </p>
-              <p class="text-xl">{title}</p>
+              <p class="text-2xl font-bold">{title}</p>
             </div>
 
             <h4 class="font-body text-xl font-normal mb-4">Add to calendar</h4>

@@ -19,7 +19,8 @@ export default component$(() => {
           </div>
         </Hero>
 
-        <div class="w-full flex justify-center mb-12">
+        <div class="w-full flex justify-center mb-12 items-center gap-x-10">
+          <div class="border-b border-puxi-primary-800 w-full opacity-50"></div>
           <image
             width="200"
             height="50"
@@ -27,11 +28,12 @@ export default component$(() => {
             alt=""
             class="w-[200px] md:w-[250px]"
           />
+          <div class="border-b border-puxi-primary-800 w-full opacity-50"></div>
         </div>
 
         <SectionWithTitle titleLevel="h2" title="Festes de Grácia 2023">
-          <p>
-            Consulta aquí totes les activitats que es faran al carrer Puigmarti
+          <p class="text-xl">
+            Consulta aquí totes les activitats que es faran al carrer Puigmartí
           </p>
         </SectionWithTitle>
 
