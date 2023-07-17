@@ -10,11 +10,11 @@ export default component$(() => {
       <div class="2xl:container 2xl: mx-auto px-6 pt-12">
         <Hero>
           <div class="relative" q:slot="title">
-            <h1 class="mb-6 w-full text-center md:text-left">
+            <h1 class="mb-6 w-full text-center">
               <span class="absolute -top-2 left-[45%] md:left-28 text-2xl">
                 Festa Major
               </span>
-              Puigmarti
+              Puigmartí
             </h1>
           </div>
         </Hero>
@@ -34,7 +34,7 @@ export default component$(() => {
         <SectionWithTitle
           notFixed
           titleLevel="h2"
-          title="Festes de Grácia 2023"
+          title="Festes de Gràcia 2023"
         >
           <p class="text-xl">
             Consulta aquí totes les activitats que es faran al carrer Puigmartí
