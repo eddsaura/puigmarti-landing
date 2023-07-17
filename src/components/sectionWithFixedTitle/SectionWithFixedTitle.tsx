@@ -7,12 +7,14 @@ interface Props {
   titleLevel: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
   fullHeight?: boolean;
   customClass?: string;
+  notFixed?: boolean;
 }
 
 export const SectionWithTitle = component$(
-  ({ title, fullHeight, titleLevel = "h2", customClass }: Props) => {
+  ({ title, fullHeight, titleLevel = "h2", customClass, notFixed }: Props) => {
     const sectionRef = useSignal<Element>();
     const show = useSignal(false);
+    const fixed = useSignal(false);
 
     const Component = titleLevel;
 
@@ -28,15 +30,19 @@ export const SectionWithTitle = component$(
             }
           });
         },
-        { threshold: 0.3 }
+        { threshold: 0.1 }
       );
 
       const onScroll = () => {
         let elDistanceToTop = 0;
-        if (sectionRef.value) {
+        if (sectionRef.value && !notFixed) {
           elDistanceToTop = sectionRef.value.getBoundingClientRect().top;
+          if (elDistanceToTop <= -32) {
+            fixed.value = true;
+          } else {
+            fixed.value = false;
+          }
         }
-        console.log("elDistanceToTop", elDistanceToTop);
       };
 
       if (sectionRef.value) {
@@ -57,9 +63,10 @@ export const SectionWithTitle = component$(
       >
         <Component
           class={clsx(
-            "mb-4 opacity-0 transition-all transform translate-y-2 duration-300",
+            "mb-4 opacity-0 transition-transform transform translate-y-2 duration-300 bg-puxi-primary-100 py-5 w-full z-10",
             {
-              "opacity-100 !translate-y-0": show.value,
+              "opacity-100 translate-y-0": show.value,
+              "fixed top-0 ": fixed.value,
             }
           )}
         >
@@ -67,7 +74,7 @@ export const SectionWithTitle = component$(
         </Component>
         <div
           class={clsx(
-            "opacity-0 transition-all transform translate-y-6 duration-300 delay-100",
+            "opacity-0 transition-all transform translate-y-6 duration-300 delay-150",
             {
               "opacity-100 !translate-y-0": show.value,
             }

@@ -31,7 +31,11 @@ export default component$(() => {
           <div class="border-b border-puxi-primary-800 w-full opacity-50"></div>
         </div>
 
-        <SectionWithTitle titleLevel="h2" title="Festes de Grácia 2023">
+        <SectionWithTitle
+          notFixed
+          titleLevel="h2"
+          title="Festes de Grácia 2023"
+        >
           <p class="text-xl">
             Consulta aquí totes les activitats que es faran al carrer Puigmartí
           </p>
@@ -41,20 +45,20 @@ export default component$(() => {
           <ScheduleGroup
             schedule={[
               {
-                title: "Traca d'inici Festa Major amb coca i beguda",
+                title: "💥 Traca d'inici Festa Major amb coca i beguda",
                 description: "Traca d'inici Festa Major amb coca i beguda",
                 startDate: new Date("2023-08-15T08:00:00.020z"),
               },
               {
-                title: "Vermut ambientat amb música.",
+                title: "🎶 Vermut ambientat amb música.",
                 startDate: new Date("2023-08-15T12:00:00.020z"),
               },
               {
-                title: "Concert David González Capinàs.",
+                title: "🎤 Concert David González Capinàs.",
                 startDate: new Date("2023-08-15T18:00:00.020z"),
               },
               {
-                title: "Concert Temple Bar",
+                title: "🎸 Concert Temple Bar",
                 startDate: new Date("2023-08-15T23:00:00.020z"),
               },
             ]}
@@ -65,15 +69,15 @@ export default component$(() => {
           <ScheduleGroup
             schedule={[
               {
-                title: "Campionat dòmino i parxís",
+                title: "🎲 Campionat dòmino i parxís",
                 startDate: new Date("2023-08-16T11:00:00.020z"),
               },
               {
-                title: "Havaneres Mar Brava",
+                title: "🎵 Havaneres Mar Brava",
                 startDate: new Date("2023-08-16T18:00:00.020z"),
               },
               {
-                title: "Flamenco Queer",
+                title: "💃 Flamenco Queer",
                 startDate: new Date("2023-08-16T23:00:00.020z"),
               },
             ]}
@@ -84,15 +88,16 @@ export default component$(() => {
           <ScheduleGroup
             schedule={[
               {
-                title: "Taller inifantil amb plastilina",
+                title: "🧒 Taller inifantil amb plastilina",
                 startDate: new Date("2023-08-17T11:00:00.020z"),
               },
               {
-                title: "Contacontes “Amunt i Avall” infantil amb La Cuentista",
+                title:
+                  "📖 Contacontes “Amunt i Avall” infantil amb La Cuentista",
                 startDate: new Date("2023-08-17T18:00:00.020z"),
               },
               {
-                title: "Malaca Blues Band",
+                title: "🎷 Malaca Blues Band",
                 startDate: new Date("2023-08-17T23:00:00.020z"),
               },
             ]}
@@ -103,7 +108,7 @@ export default component$(() => {
           <ScheduleGroup
             schedule={[
               {
-                title: "Taller familiar musical amb Marcos",
+                title: "🎹 Taller familiar musical amb Marcos",
                 startDate: new Date("2023-08-18T18:00:00.020z"),
               },
               {
@@ -118,7 +123,7 @@ export default component$(() => {
           <ScheduleGroup
             schedule={[
               {
-                title: "Taller Casa Vicens",
+                title: "🌆 Taller Casa Vicens",
                 startDate: new Date("2023-08-19T10:30:00.020z"),
               },
               {
@@ -126,11 +131,11 @@ export default component$(() => {
                 startDate: new Date("2023-08-19T14:00:00.020z"),
               },
               {
-                title: "Contacontes infantil: El Sacaire del Llobregat",
+                title: "📚 Contacontes infantil: El Sacaire del Llobregat",
                 startDate: new Date("2023-08-19T18:00:00.020z"),
               },
               {
-                title: "Concert Temple Bar",
+                title: "🍻 Concert Temple Bar",
                 startDate: new Date("2023-08-19T23:00:00.020z"),
               },
             ]}
@@ -141,15 +146,15 @@ export default component$(() => {
           <ScheduleGroup
             schedule={[
               {
-                title: "Vermut ambientat amb música",
+                title: "🍸 Vermut ambientat amb música",
                 startDate: new Date("2023-08-20T12:00:00.020z"),
               },
               {
-                title: "Bingo musical",
+                title: "🔮 Bingo musical",
                 startDate: new Date("2023-08-20T18:00:00.020z"),
               },
               {
-                title: "Concert VHS (Vintage Hit Songs)",
+                title: "🪕 Concert VHS (Vintage Hit Songs)",
                 startDate: new Date("2023-08-20T23:00:00.020z"),
               },
             ]}
@@ -160,19 +165,19 @@ export default component$(() => {
           <ScheduleGroup
             schedule={[
               {
-                title: "Gimcana",
+                title: "🔎 Gimcana",
                 startDate: new Date("2023-08-21T16:00:00.020z"),
               },
               {
-                title: "Tast de vins",
+                title: "🍇 Tast de vins",
                 startDate: new Date("2023-08-21T20:00:00.020z"),
               },
               {
-                title: "Concert Blues Wax & Boogie",
+                title: "🥁 Concert Blues Wax & Boogie",
                 startDate: new Date("2023-08-21T23:00:00.020z"),
               },
               {
-                title: "Traca fi de festa i desguarniment",
+                title: "💥 Traca fi de festa i desguarniment",
                 startDate: new Date("2023-08-22T02:00:00.020z"),
               },
             ]}

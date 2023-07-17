@@ -34,10 +34,12 @@ export const ScheduleGroup = component$(({ schedule }: Props) => {
               <p class="text-xl text-white bg-puxi-primary-800 py-4 px-4 rounded-2xl font-bold  ">
                 {simpleHourStartDate}
               </p>
-              <p class="text-2xl font-bold">{title}</p>
+              <h3 class="text-2xl font-bold font-body">{title}</h3>
             </div>
 
-            <h4 class="font-body text-xl font-normal mb-4">Add to calendar</h4>
+            <h4 class="font-body text-xl font-normal mb-4">
+              Afegir al calendari
+            </h4>
 
             <div class="h-[80px]">
               <add-to-calendar-button
