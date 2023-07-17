@@ -11,7 +11,7 @@ export default component$(() => {
         <Hero>
           <div class="relative" q:slot="title">
             <h1 class="mb-6 w-full text-center">
-              <span class="absolute -top-2 left-[45%] md:left-28 text-2xl">
+              <span class="absolute -top-2 left-[47%] break-keep text-2xl">
                 Festa Major
               </span>
               Puigmartí
