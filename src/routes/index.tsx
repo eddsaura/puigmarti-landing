@@ -58,7 +58,7 @@ export default component$(() => {
                 startDate: new Date("2023-08-15T18:00:00.020z"),
               },
               {
-                title: "🎸 Concert Temple Bar",
+                title: "🎸 Concert S'Temple Bar",
                 startDate: new Date("2023-08-15T23:00:00.020z"),
               },
             ]}
@@ -135,7 +135,7 @@ export default component$(() => {
                 startDate: new Date("2023-08-19T18:00:00.020z"),
               },
               {
-                title: "🍻 Concert Temple Bar",
+                title: "🍻 Concert S'Temple Bar",
                 startDate: new Date("2023-08-19T23:00:00.020z"),
               },
             ]}
@@ -167,10 +167,6 @@ export default component$(() => {
               {
                 title: "🔎 Gimcana",
                 startDate: new Date("2023-08-21T16:00:00.020z"),
-              },
-              {
-                title: "🍇 Tast de vins",
-                startDate: new Date("2023-08-21T20:00:00.020z"),
               },
               {
                 title: "🥁 Concert Blues Wax & Boogie",
