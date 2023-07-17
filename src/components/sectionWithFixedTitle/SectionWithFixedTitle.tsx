@@ -30,14 +30,14 @@ export const SectionWithTitle = component$(
             }
           });
         },
-        { threshold: 0.1 }
+        { threshold: 0.2 }
       );
 
       const onScroll = () => {
         let elDistanceToTop = 0;
         if (sectionRef.value && !notFixed) {
           elDistanceToTop = sectionRef.value.getBoundingClientRect().top;
-          if (elDistanceToTop <= -32) {
+          if (elDistanceToTop <= 42) {
             fixed.value = true;
           } else {
             fixed.value = false;
@@ -58,15 +58,16 @@ export const SectionWithTitle = component$(
       <section
         class={clsx("pt-10 mb-20", customClass, {
           "h-[70vh]": fullHeight,
+          "pt-[133px]": fixed.value,
         })}
         ref={sectionRef}
       >
         <Component
           class={clsx(
-            "mb-4 opacity-0 transition-transform transform translate-y-2 duration-300 bg-puxi-primary-100 py-5 w-full z-10",
+            "mb-4 opacity-0 transition-transform transform translate-y-2 duration-300 bg-puxi-primary-100 py-5 pt-8 w-full z-10",
             {
               "opacity-100 translate-y-0": show.value,
-              "fixed top-0 ": fixed.value,
+              "fixed -top-4 ": fixed.value,
             }
           )}
         >
