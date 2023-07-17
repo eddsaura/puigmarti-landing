@@ -23,6 +23,11 @@ export default component$(() => {
         <link rel="manifest" href="/manifest.json" />
         <RouterHead />
         <ServiceWorkerRegister />
+        <script
+          src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@2"
+          async
+          defer
+        ></script>
       </head>
       <body lang="en">
         <RouterOutlet />
