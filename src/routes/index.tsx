@@ -97,7 +97,7 @@ export default component$(() => {
                 startDate: new Date("2023-08-17T18:00:00.020z"),
               },
               {
-                title: "🎷 Malaca Blues Band",
+                title: "🎷 Malacara Blues Band",
                 startDate: new Date("2023-08-17T23:00:00.020z"),
               },
             ]}
