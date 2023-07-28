@@ -4,7 +4,6 @@ import { Decoration } from "~/components/decoration/Decoration";
 import { Hero } from "~/components/hero/Hero";
 import { ScheduleGroup } from "~/components/schedules/ScheduleGroup";
 import { SectionWithTitle } from "~/components/sectionWithFixedTitle/SectionWithFixedTitle";
-import { Building } from "~/components/svg/Building";
 import { Location } from "~/components/svg/Location";
 import { events } from "~/data/events";
 
