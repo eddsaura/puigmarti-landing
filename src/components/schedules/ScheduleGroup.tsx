@@ -1,4 +1,5 @@
 import { component$ } from "@builder.io/qwik";
+import { getDatesAndTimesToAddToCalendar } from "~/lib/helpers";
 
 type Schedule = {
   title: string;
@@ -16,14 +17,12 @@ export const ScheduleGroup = component$(({ schedule }: Props) => {
       {schedule.map((item) => {
         const { title, startDate } = item;
 
-        const startDateToCalendar = startDate.toISOString();
-
-        const plusOneHour = new Date(startDate);
-        plusOneHour.setHours(plusOneHour.getHours() + 1);
-        const endDateToCalendar = plusOneHour.toISOString();
-
-        const simpleHourStartDate = startDate.getUTCHours() + ":00";
-        const simpleHourEndDate = plusOneHour.getUTCHours() + ":00";
+        const {
+          startDateToCalendar,
+          endDateToCalendar,
+          simpleHourEndDate,
+          simpleHourStartDate,
+        } = getDatesAndTimesToAddToCalendar(startDate);
 
         return (
           <div
@@ -37,6 +36,8 @@ export const ScheduleGroup = component$(({ schedule }: Props) => {
               <h3 class="text-2xl font-bold font-body">{title}</h3>
             </div>
 
+            {item.description && <p class="text-xl mb-6">{item.description}</p>}
+
             <h4 class="font-body text-xl font-normal mb-4">
               Afegir al calendari
             </h4>
@@ -45,7 +46,7 @@ export const ScheduleGroup = component$(({ schedule }: Props) => {
               <add-to-calendar-button
                 name={title}
                 options="'Apple','Google'"
-                location="Puigmarti, 08012 Barcelona, Spain"
+                location="Puigmarti 23, 08012 Barcelona, Spain"
                 startDate={startDateToCalendar}
                 endDate={endDateToCalendar}
                 startTime={simpleHourStartDate}

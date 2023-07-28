@@ -6,11 +6,14 @@ settings:
 
 dependencies:
   add-to-calendar-button:
-    specifier: ^2.2.10
-    version: 2.2.10
+    specifier: ^2.3.0
+    version: 2.3.0
   clsx:
     specifier: ^1.2.1
     version: 1.2.1
+  qwik:
+    specifier: ^1.0.57
+    version: 1.0.57
 
 devDependencies:
   '@builder.io/qwik':
@@ -2637,8 +2640,8 @@ packages:
     hasBin: true
     dev: true
 
-  /add-to-calendar-button@2.2.10:
-    resolution: {integrity: sha512-e8gw7l/nwmkMkQG+GqEMZVHSQuLDMI4Ho7LULvSQbzfguxVRJM6U7KUsKGm/xfX9t5i3QbNAdRlKCSaUaW8erQ==}
+  /add-to-calendar-button@2.3.0:
+    resolution: {integrity: sha512-1lG05KTs/beSt+TvfkWMeqzAQy/T89x+TsBd9/gXTaDoc/lld88nFZYYY2hT9oe8XSTiZKf/J5XfC9ETRtJMxw==}
     engines: {node: '>=16.18.1', npm: '>=8.19.2'}
     dependencies:
       timezones-ical-library: 1.7.1
@@ -6699,6 +6702,10 @@ packages:
     resolution: {integrity: sha512-WuyALRjWPDGtt/wzJiadO5AXY+8hZ80hVpe6MyivgraREW751X3SbhRvG3eLKOYN+8VEvqLcf3wdnt44Z4S4SA==}
     engines: {node: '>=10'}
     dev: true
+
+  /qwik@1.0.57:
+    resolution: {integrity: sha512-ZquaQgRx7MlmdILKZ7ifXcwiHGpuY7Fza+i/moG+8eSgK+/FeqXnu2dMjKCD/3tByhzwy7kh2LZF2s+9MKMUBg==}
+    dev: false
 
   /range-parser@1.2.1:
     resolution: {integrity: sha512-Hrgsx+orqoygnmhFbKaHE6c296J+HTAQXoxEF6gNupROmmGJRoyzfG3ccAveqCBrwr/2yxQ5BVd/GTl5agOwSg==}

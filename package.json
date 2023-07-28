@@ -41,7 +41,8 @@
     "vite-tsconfig-paths": "4.2.0"
   },
   "dependencies": {
-    "add-to-calendar-button": "^2.2.10",
-    "clsx": "^1.2.1"
+    "add-to-calendar-button": "^2.3.0",
+    "clsx": "^1.2.1",
+    "qwik": "^1.0.57"
   }
 }

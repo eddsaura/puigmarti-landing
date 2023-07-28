@@ -25,8 +25,8 @@ export default component$(() => {
         <ServiceWorkerRegister />
         <script
           src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@2"
-          async
           defer
+          async
         ></script>
       </head>
       <body lang="en">

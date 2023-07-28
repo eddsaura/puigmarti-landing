@@ -19,6 +19,7 @@ module.exports = {
       colors: {
         "puxi-primary": {
           100: brown100,
+          500: "#9B5B22",
           800: "#563110",
         },
         "puxi-secondary": "#58CEDE",
