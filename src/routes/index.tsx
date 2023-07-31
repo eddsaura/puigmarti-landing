@@ -11,6 +11,8 @@ import { Container } from "~/layout/Container";
 export default component$(() => {
   return (
     <Container>
+      {/* <TopBannerAlert /> */}
+
       <Hero>
         <div class="relative" q:slot="title">
           <h1 class="mb-6 w-full text-center">
