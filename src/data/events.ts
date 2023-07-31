@@ -33,7 +33,7 @@ export const events = {
   ],
   dijous: [
     {
-      title: "🧒 Taller inifantil amb plastilina",
+      title: "🧒 Taller infantil amb plastilina",
       startDate: new Date("2023-08-17T11:00:00.020z"),
     },
     {
