@@ -38,7 +38,7 @@ export default component$(() => {
             class="flex w-fit gap-x-2 items-center transition-colors hover:text-puxi-primary-500"
           >
             <Location />
-            <h4 class="inline">Trobans al maps!</h4>
+            <h4 class="inline">Troba'ns al maps!</h4>
           </a>
         </div>
       </SectionWithTitle>

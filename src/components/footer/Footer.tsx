@@ -6,7 +6,7 @@ export const Footer = component$(() => {
   return (
     <footer class="px-6 py-24">
       <Container>
-        <h3 class="mb-4">Trobans a les xarxes socials</h3>
+        <h3 class="mb-4">Troba'ns a les xarxes socials</h3>
         <a
           href="https://instagram.com/festamajorpuigmarti"
           target="_blank"
