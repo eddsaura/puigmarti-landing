@@ -5,6 +5,7 @@ import {
   ServiceWorkerRegister,
 } from "@builder.io/qwik-city";
 import { RouterHead } from "./components/router-head/router-head";
+import { inject } from "@vercel/analytics";
 
 import "./global.css";
 
@@ -15,6 +16,8 @@ export default component$(() => {
    *
    * Don't remove the `<head>` and `<body>` elements.
    */
+
+  inject();
 
   return (
     <QwikCityProvider>
