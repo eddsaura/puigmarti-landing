@@ -56,12 +56,13 @@ export const SectionWithTitle = component$(
 
     return (
       <section
-        class={clsx("pt-10 mb-20", customClass, {
+        class={clsx("relative pt-10 mb-20", customClass, {
           "h-[70vh]": fullHeight,
           "pt-[133px]": fixed.value,
         })}
         ref={sectionRef}
       >
+        <Slot name="decoration" />
         <Component
           class={clsx(
             "mb-4 opacity-0 transition-transform transform translate-y-2 duration-500 ease-out bg-puxi-primary-100 py-5 pt-8 w-full z-10 ",
