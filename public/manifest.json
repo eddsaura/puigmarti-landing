@@ -5,6 +5,7 @@
   "start_url": ".",
   "display": "standalone",
   "background_color": "#FBEDE0",
+  "theme_color": "#563110",
   "description": "Web Puigmartí",
   "icons": [
     {
@@ -15,6 +16,12 @@
     {
       "src": "/android-chrome-512x512.png",
       "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/maskable_icon.png",
+      "sizes": "416x416",
+      "maskable": true,
       "type": "image/png"
     }
   ]
