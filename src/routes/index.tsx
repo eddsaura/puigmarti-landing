@@ -1,5 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
+
 import { CountDown } from "~/components/countDown/CountDown";
 import { Decoration } from "~/components/decoration/Decoration";
 import { Hero } from "~/components/hero/Hero";
@@ -81,6 +82,12 @@ export const head: DocumentHead = {
       name: "description",
       content:
         "Coneix les activitats del carrer Puigmarti. Festa major de Gràcia 2023. Fiestas de Gràcia, vive la fiesta en el barrio más original de Barcelona con nosotras. ¿Qué hacer en barcelona? Ven a la calle Puiigmartí",
+    },
+  ],
+  links: [
+    {
+      rel: "canonical",
+      href: "https://www.puigmarti.cat",
     },
   ],
 };
