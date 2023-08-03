@@ -4,4 +4,4 @@ Disallow: /nogooglebot/
 User-agent: *
 Allow: /
 
-Sitemap: https://www.puigmarti.cat/sitemap.xml
+Sitemap: https://www.puigmarti.cat/manual-sitemap.xml
