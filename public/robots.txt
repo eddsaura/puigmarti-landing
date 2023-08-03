@@ -5,3 +5,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://www.puigmarti.cat/manual-sitemap.xml
+Sitemap: https://puigmarti.cat/manual-sitemap.xml
