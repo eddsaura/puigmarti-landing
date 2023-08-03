@@ -80,7 +80,7 @@ export const head: DocumentHead = {
     {
       name: "description",
       content:
-        "Coneix les activitats del carrer Puigmarti. Festa major de Gràcia 2023. Fiestas de Gràcia, vive la fiesta en el barrio más original de Barcelona con nosotras.",
+        "Coneix les activitats del carrer Puigmarti. Festa major de Gràcia 2023. Fiestas de Gràcia, vive la fiesta en el barrio más original de Barcelona con nosotras. ¿Qué hacer en barcelona? Ven a la calle Puiigmartí",
     },
   ],
 };
