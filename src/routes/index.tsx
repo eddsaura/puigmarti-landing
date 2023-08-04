@@ -75,13 +75,38 @@ export default component$(() => {
   );
 });
 
+const pageTitle =
+  "Carrer Puigmarti, festa major de Gràcia 2023. Assocació de veïns";
+const pageDescription =
+  "Coneix les activitats del carrer Puigmarti. Festa major de Gràcia 2023. Fiestas de Gràcia, vive la fiesta en el barrio más original de Barcelona con nosotras. ¿Qué hacer en barcelona? Ven a la calle Puiigmartí";
+
 export const head: DocumentHead = {
-  title: "Carrer Puigmarti, festa major de Gràcia 2023",
+  title: pageTitle,
   meta: [
     {
       name: "description",
-      content:
-        "Coneix les activitats del carrer Puigmarti. Festa major de Gràcia 2023. Fiestas de Gràcia, vive la fiesta en el barrio más original de Barcelona con nosotras. ¿Qué hacer en barcelona? Ven a la calle Puiigmartí",
+      content: pageDescription,
+    },
+    {
+      name: "og:title",
+      content: pageTitle,
+    },
+    {
+      name: "og:description",
+      content: pageDescription,
+    },
+    {
+      name: "og:url",
+      content: "https://www.puigmarti.cat",
+    },
+    {
+      name: "og:site_name",
+      content: pageTitle,
+    },
+
+    {
+      name: "og:image",
+      content: "https://www.puigmarti.cat/images/og-image.jpg",
     },
   ],
   links: [
