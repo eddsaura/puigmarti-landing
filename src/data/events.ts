@@ -70,7 +70,8 @@ export const events = {
       startDate: new Date("2023-08-19T18:00:00.020z"),
     },
     {
-      title: "🍻 Concert S'Temple Bar",
+      title: "🍻 Concert S'Temple Bar + Secret Superlujo party",
+      superlujo: true,
       startDate: new Date("2023-08-19T23:00:00.020z"),
     },
   ],

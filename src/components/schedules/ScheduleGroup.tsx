@@ -5,6 +5,7 @@ type Schedule = {
   title: string;
   description?: string;
   startDate: Date;
+  superlujo?: boolean;
 };
 
 interface Props {
@@ -15,7 +16,7 @@ export const ScheduleGroup = component$(({ schedule }: Props) => {
   return (
     <div class="grid lg:grid-cols-2 gap-8 ">
       {schedule.map((item) => {
-        const { title, startDate } = item;
+        const { title, startDate, superlujo } = item;
 
         const {
           startDateToCalendar,
@@ -27,9 +28,9 @@ export const ScheduleGroup = component$(({ schedule }: Props) => {
         return (
           <div
             key="title"
-            class="py-6 px-4 border border-black border-opacity-10 rounded-lg group hover:bg-puxi-primary-800 hover:bg-opacity-5 transition-all"
+            class="relative py-6 px-4 border border-black border-opacity-10 rounded-lg group hover:bg-puxi-primary-800 hover:bg-opacity-5 transition-all"
           >
-            <div class="flex gap-x-4 mb-6 items-center min-h-[54px]">
+            <div class="flex gap-x-4 mb-6 items-center min-h-[54px] relative z-10">
               <p class="text-xl text-white bg-puxi-primary-800 py-4 px-4 rounded-2xl font-bold  ">
                 {simpleHourStartDate}
               </p>
@@ -61,6 +62,17 @@ export const ScheduleGroup = component$(({ schedule }: Props) => {
                 hideCheckmark
               ></add-to-calendar-button>
             </div>
+
+            {superlujo && (
+              <image
+                src="/images/sparkles.png"
+                alt=""
+                width="100"
+                height="100"
+                class="absolute -left-4 -top-10 z-0"
+                q:slot="superlujo"
+              />
+            )}
           </div>
         );
       })}

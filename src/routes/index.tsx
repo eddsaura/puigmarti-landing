@@ -31,6 +31,7 @@ export default component$(() => {
         <div>
           <p class="text-xl mb-6">
             Consulta aquí totes les activitats que es faran al carrer Puigmartí
+            durant les festes de Gràcia 2023
           </p>
           <a
             href="https://goo.gl/maps/EfzwSbjdJq4qzkco6"
