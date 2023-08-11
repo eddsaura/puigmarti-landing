@@ -5,7 +5,7 @@ export const events = {
       startDate: new Date("2023-08-15T08:00:00.020z"),
     },
     {
-      title: "🎶 Vermut ambientat amb música.",
+      title: "🎶 Vermutronic Italo Brothers 🤌",
       startDate: new Date("2023-08-15T12:00:00.020z"),
     },
     {

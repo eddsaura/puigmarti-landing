@@ -4,7 +4,7 @@ export const CountDown = component$(() => {
   const fiestasDate = new Date("2023-08-15T08:00:00.020z");
   const timeToDate = fiestasDate.getTime() - Date.now();
   const daysToDate = Math.floor(timeToDate / (1000 * 60 * 60 * 24));
-  const hoursToDate = Math.floor((timeToDate / (1000 * 60 * 60)) % 24);
+  const hoursToDate = Math.floor(((timeToDate / (1000 * 60 * 60)) % 24) - 1);
 
   return (
     <div
